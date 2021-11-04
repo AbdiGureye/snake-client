@@ -1,4 +1,5 @@
 // const net = require("net");
+const setupInput = require(`./input`);
 const connect = require(`./client`);
 const handleUserInput = function (value) {
    
@@ -8,14 +9,14 @@ const handleUserInput = function (value) {
   }
   
 }
-const setupInput = function () {
-  const stdin = process.stdin;
-  stdin.setRawMode(true);
-  stdin.setEncoding("utf8");
-  stdin.resume();
-  stdin.on("data", handleUserInput);
-  return stdin;
-}; 
+// const setupInput = function () {
+//   const stdin = process.stdin;
+//   stdin.setRawMode(true);
+//   stdin.setEncoding("utf8");
+//   stdin.resume();
+//   stdin.on("data", handleUserInput);
+//   return stdin;
+// }; 
 setupInput()
 
 // // establishes a connection with the game server
