@@ -10,6 +10,7 @@ const connect = function () {
     console.log("Successfully connected to game server")
   });
  conn.write("Name: AAG")
+ conn.write("Move: UP")
 //   // interpret incoming data as text
   
 
